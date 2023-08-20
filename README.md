@@ -18,14 +18,14 @@ To use this repository, you need the following:
 #### Clone the github repository
 
 ```shell
-$ git clone https://github.com/droidpythonic/masterpiece.git
+git clone https://github.com/droidpythonic/masterpiece.git
 ```
 
 #### Install python packages
 
 ```shell
-$ cd src
-$ pip install -r requirements.txt
+cd src
+pip install -r requirements.txt
 ```
 
 #### Install Pybricks firmware
@@ -49,5 +49,5 @@ Once the Spike Prime hub has been flashed with Pybricks firmware, it no longer w
 #### Create a feature branch
 
 ```shell
-$ git branch -b feature/max/<branch-name>
+git branch -b feature/max/<branch-name>
 ```
