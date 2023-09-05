@@ -51,3 +51,38 @@ Once the Spike Prime hub has been flashed with Pybricks firmware, it no longer w
 ```shell
 git branch -b feature/max/<branch-name>
 ```
+
+## Innovation Ideas
+
+### Max
+
+#### Automatic Song Writer
+
+Max likes playing the piano. The most annoying thing about song writing is one has to play each note of the song individually, write it down on paper and then play again.
+
+There could be an automatic song writer. It should listen to what's being played and generate notes automatically.
+
+### Kavya
+
+#### VR Contact Lenses
+
+Instead of VR headsets, use contact lenses to project VR environment to help performances.
+
+Create a VR tennis game that plays a piano note depending on where the ball lands on the court.
+
+### Ishanvi
+
+#### Translator
+
+Make a software that "translates" sports language to easily understood phrases and helps learn a new instrument or a type of dance.
+
+Let's say a piano player wants to learn how to play tennis. For beginners, the entire court could be a single note. As your skill progresses, the target note could be smaller.
+
+### Aron
+
+Create a device to track what people are eating.
+
+### Vivaan
+
+A device that attach to the instrument you're playing. It connects to the app, and detects what keys are being pressed.
+
