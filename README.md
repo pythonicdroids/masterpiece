@@ -90,13 +90,19 @@ When you are ready to merge you branch back to the main branch, we should all re
 
 ## Innovation Ideas
 
+How can you use technology and the arts to help engage others or increase participation in what you love to do?                              
+
 ### Max
 
 #### Automatic Song Writer
 
 Max likes playing the piano. The most annoying thing about song writing is one has to play each note of the song individually, write it down on paper and then play again.
 
-There could be an automatic song writer. It should listen to what's being played and generate notes automatically.
+There could be an automatic song writer. It should listen to what's being played and generate notes automatically. 
+
+It is an atttachment that can be slotted on to the top of a piano, if it is an electric piano there will be a device that plugs into a USB port and dectects what signal is being sent.
+
+There will also be a printer on the side of the machine that will automaticly print after 1 minute, or if the user clicks a button that says print like ctrl + P
 
 ### Kavya
 
@@ -106,13 +112,21 @@ Instead of VR headsets, use contact lenses to project VR environment to help per
 
 Create a VR tennis game that plays a piano note depending on where the ball lands on the court.
 
+Let's say a piano player wants to learn how to play tennis. For beginners, the entire court could be a single note. As your skill progresses, the target note could be smaller.
+
+Music to tennis - probably will need to learn form. Different swings can be different notes
+
 ### Ishanvi
 
 #### Translator
 
 Make a software that "translates" sports language to easily understood phrases and helps learn a new instrument or a type of dance.
 
-Let's say a piano player wants to learn how to play tennis. For beginners, the entire court could be a single note. As your skill progresses, the target note could be smaller.
+if a volleyball player wants to play violin - different strings can be different words
+
+violin player wants to learn volleyball - different positions can be different strings
+
+can help people who have experience in something and who want to learn something else
 
 ### Aron
 
