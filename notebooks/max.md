@@ -27,3 +27,13 @@
 
 
 - The alligner will be 2 slanted bars on either side of the robot, and the space in the middle will be exactly the width of the mission
+
+
+
+
+
+## 09/10/23
+### Meeting
+
+ Today we continued working on our attachments. With some help from the Brainy Builders, we found out how to make attachments easier to attach and detach with rectangular pieces. They said our attachments were flimsy and helped us make them more sturdier. 
+After that, Kavya finished her attachment and code for mission #2 and is now working on another one. I made my attachment more sturdy and adapted it to the universal base.
