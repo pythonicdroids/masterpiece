@@ -110,6 +110,11 @@ There will also be a printer on the side of the machine that will automaticly pr
 There will be a camera that sees which muffler is moving. Each muffler is assigned a  number 1-88 and say, muffler 23 was pressed. Say muffler 23 is B flat. It corresponds to the apropriate note on the display.
 Features: Basic piano skills, Note recognizer, ability to record and play songs, printer
 
+
+What abt micronotes
+Needs to be more general-too specific
+What abt upright pianos
+For electric pianos-USB
 ### Kavya
 
 #### VR Contact Lenses
