@@ -104,6 +104,12 @@ It is an atttachment that can be slotted on to the top of a piano, if it is an e
 
 There will also be a printer on the side of the machine that will automaticly print after 1 minute, or if the user clicks a button that says print like ctrl + P
 
+
+
+
+There will be a camera that sees which muffler is moving. Each muffler is assigned a  number 1-88 and say, muffler 23 was pressed. Say muffler 23 is B flat. It corresponds to the apropriate note on the display.
+Features: Basic piano skills, Note recognizer, ability to record and play songs, printer
+
 ### Kavya
 
 #### VR Contact Lenses
