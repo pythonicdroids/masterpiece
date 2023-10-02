@@ -110,6 +110,10 @@ There will also be a printer on the side of the machine that will automaticly pr
 There will be a camera that sees which muffler is moving. Each muffler is assigned a  number 1-88 and say, muffler 23 was pressed. Say muffler 23 is B flat. It corresponds to the apropriate note on the display.
 Features: Basic piano skills, Note recognizer, ability to record and play songs, printer
 
+- Every time you play song it will compare it to the actual song. If you do something wrong, like if you play a wrong note or the tempo is a bit fast it will give you feedback after you are finished.
+- This is basically a virtual piano teacher, because real life piano lessons are super expensive (100ish dollars per hour)
+- If you want to learn piano but you don't think you can afford the 6,000 dollars per year for lessons, then this is the perfect solution
+
 
 What abt micronotes
 Needs to be more general-too specific
