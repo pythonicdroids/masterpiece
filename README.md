@@ -115,10 +115,18 @@ Features: Basic piano skills, Note recognizer, ability to record and play songs,
 - If you want to learn piano but you don't think you can afford the 6,000 dollars per year for lessons, then this is the perfect solution
 
 
+  will get people interested into instrument-if someones playin a bunch of notes that sound good then it can be transformed into a piano piece
+
+- sounds like its not original enough
+
+- sounds like its more reasonable than ishanvis
+
 What abt micronotes
 Needs to be more general-too specific
 What abt upright pianos
 For electric pianos-USB
+Ishanvi says that this is basically a improvment to help others get better at something they already know\
+expensive
 ### Kavya
 
 #### VR Contact Lenses
@@ -143,6 +151,28 @@ violin player wants to learn volleyball - different positions can be different s
 
 can help people who have experience in something and who want to learn something else
 
+the problem with this is that you need prior experience with a sport or a instrument
+
+The is easily relatable, and overall a good idea but I feel that the execution is less than perfect
+max
+
+It would help someone who doesnt know anything about another part or area of sports or instruments and help them get more invested in it
+
+might only target a specific group of people
+
+more innovative
+
+harder to accomplish
+aron
+
+ishanvis and kavyas are too overcomplicated
+vivaan
+
+hard to understand
+
+thinking outside the box
+
+We can use Ishanvis idea to gain intrest in something and then use Maxs to help them get good
 ### Aron
 
 Create a device to track what people are eating.
@@ -152,6 +182,7 @@ Device attached to istrument to connect to an app and do the same things on the 
 
 ### Second Idea
 AR glasses to show you how to do an art and also it teaches cool things about the art they want to learn and teach them a cool thing to do to get them intrested in it. Examples of arts you can learn: drawing, painting, musical arts, maybe dancing. maybe to get get them intrested into drawing teach them how to a 3d drawing and for painting teach them to paint blending colors. For piano maybe teaching how the piano works same for other musical instruments.
+
 
 
 
