@@ -147,10 +147,10 @@ can help people who have experience in something and who want to learn something
 
 Create a device to track what people are eating.
 
-### Vivaan
-1.
+# Vivaan
 Device attached to istrument to connect to an app and do the same things on the app as my second idea.
-2.
+
+### second idea
 AR glasses to show you how to do an art and also it teaches cool things about the art they want to learn and teach them a cool thing to do to get them intrested in it. Examples of arts you can learn: drawing, painting, musical arts, maybe dancing. maybe to get get them intrested into drawing teach them how to a 3d drawing and for painting teach them to paint blending colors. For piano maybe teaching how the piano works same for other musical instruments.
 
 
