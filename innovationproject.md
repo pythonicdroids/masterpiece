@@ -17,5 +17,5 @@
 
   You can make a audio recoding of each and every one of your songs and play them at will
 
-  BLUETOOTH PRINTER
+  It can connect to your printer and if you dont have one then theres a automatic printer
   
