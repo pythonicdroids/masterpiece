@@ -184,5 +184,6 @@ Device attached to istrument to connect to an app and do the same things on the 
 AR glasses to show you how to do an art and also it teaches cool things about the art they want to learn and teach them a cool thing to do to get them intrested in it. Examples of arts you can learn: drawing, painting, musical arts, maybe dancing. maybe to get get them intrested into drawing teach them how to a 3d drawing and for painting teach them to paint blending colors. For piano maybe teaching how the piano works same for other musical instruments.
 
 
-
-
+# MAIN IDEA NOTES
+AR Glasses
+In the AR playspace it will teach you piano by bars dropping on the keys for you to play it and teaches you keyys to play has harmonics and tempo tells where you made a mistake and helps you fix it. to get you interested teaches you how the piano keys work and how it is tuned
