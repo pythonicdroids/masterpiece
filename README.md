@@ -187,3 +187,7 @@ AR glasses to show you how to do an art and also it teaches cool things about th
 # MAIN IDEA NOTES
 AR Glasses
 In the AR playspace it will teach you piano by bars dropping on the keys for you to play it and teaches you keyys to play has harmonics and tempo tells where you made a mistake and helps you fix it. to get you interested teaches you how the piano keys work and how it is tuned
+
+
+
+ heres the link [Innovation Project Presentation](https://docs.google.com/presentation/d/1LyQJY11dDN7NfBeW6JQiYmBaA7brbhsDq2iDwWko628/edit#slide=id.p)
