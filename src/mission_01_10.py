@@ -1,6 +1,6 @@
 from pybricks.tools import wait
 
-class Mission_1_10:
+class Mission_01_10:
     def __init__(self, left_motor, right_motor, front_motor):
         self.left_motor = left_motor
         self.right_motor = right_motor

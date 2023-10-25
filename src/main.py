@@ -3,9 +3,9 @@ from pybricks.parameters import Button, Side, Port, Direction
 from pybricks.tools import wait
 from pybricks.pupdevices import Motor, ColorSensor
 from pybricks.robotics import DriveBase
-from mission_1_10 import Mission_1_10
-from mission_5 import Mission_5
-from mission_6_7 import Mission_6_7
+from mission_01_10 import Mission_01_10
+from mission_05 import Mission_05
+from mission_06_07 import Mission_06_07
 from mission_11_12 import Mission_11_12
 
 # Initialize the hub.
@@ -25,9 +25,9 @@ drive_base = DriveBase(left_motor, right_motor, wheel_diameter = 56, axle_track 
 right_color_sensor = ColorSensor(Port.F)
 left_color_sensor = ColorSensor(Port.B)
 
-mission_1_10 = Mission_1_10(left_motor, right_motor, attachment_motor)
-mission_5 = Mission_5(right_color_sensor, left_color_sensor, left_motor, right_motor, attachment_motor)
-mission_6_7 = Mission_6_7(drive_base, attachment_motor)
+mission_01_10 = Mission_01_10(left_motor, right_motor, attachment_motor)
+mission_05    = Mission_05(right_color_sensor, left_color_sensor, left_motor, right_motor, attachment_motor)
+mission_06_07 = Mission_06_07(drive_base, attachment_motor)
 mission_11_12 = Mission_11_12(left_motor, right_motor, attachment_motor)
 # Wait for any button to be pressed
 while True:
@@ -45,21 +45,21 @@ while True:
         counter = counter + 1
     elif Button.CENTER in pressed:
         if counter == 1:
-            mission_1_10.mission_one()
+            mission_01_10.mission_one()
         if counter == 5:
-            mission_5.run(False)
+            mission_05.run(False)
         elif counter == 6:
-            mission_6_7.run()
+            mission_06_07.run()
         elif counter == 7:
             mission_11_12.run()
         elif counter == 10:
-            mission_1_10.mission_ten()
+            mission_01_10.mission_ten()
 
     elif Button.BLUETOOTH in pressed:
         if counter == 1:
-            mission_1_10.mission_one_ten()
+            mission_01_10.mission_one_ten()
         if counter == 5:
-            mission_5.run(True)
+            mission_05.run(True)
 
     # Display the number so we know where we are
     hub.display.number(counter)

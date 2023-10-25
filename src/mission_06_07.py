@@ -1,4 +1,4 @@
-class Mission_6_7:
+class Mission_06_07:
     def __init__(self, drive_base, attachment_motor):
         self.drive_base = drive_base
         self.attachment_motor = attachment_motor

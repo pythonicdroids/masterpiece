@@ -1,6 +1,6 @@
 from pybricks.tools import wait
 
-class Mission_5:
+class Mission_05:
     def __init__(self, right_color_sensor, left_color_sensor, left_motor, right_motor, attachment_motor):
         self.right_color_sensor = right_color_sensor
         self.left_color_sensor = left_color_sensor
