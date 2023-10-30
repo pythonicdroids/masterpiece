@@ -43,7 +43,24 @@ class Mission_08_09:
         self.right_motor.run_angle(speed, rotation_angle, wait=False) 
         while not self.left_motor.done() or not self.right_motor.done():
             wait(10)
+
+    def nudge_lever(self):
+        self.backwards(speed=300, distance=40)
+        self.left_turn(25)
+        self.right_turn(10)
+        self.forward(1000,45)
+
+    def mission_2(self):
+        self.forward(500,63)
+        self.left_turn(50)
+        self.backwards(100,5)
+        self.forward(800,15)
+        self.backwards(100,13)
+        self.forward(800, 20)
+        self.backwards(200,8)
+        self.right_turn(60)
+        self.backwards(1000,63)
     
-    def run(self):
+    def push_camera(self):
        self.forward(200,45)
        self.backwards(1000, 45)
