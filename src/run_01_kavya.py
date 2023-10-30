@@ -11,7 +11,7 @@ class Run_01:
     def forward(self, speed,distance):
         cm = 27.6
         self.left_motor.run_angle(speed, distance/cm * 360, wait=False)
-        self.right_motor.run_angle(speed, distance/cm* -360, wait=False)
+        self.right_motor.run_angle(speed, -distance/cm* -360, wait=False)
         while not self.left_motor.done() or not self.right_motor.done():
             wait(10)
     

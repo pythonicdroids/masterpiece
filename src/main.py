@@ -28,7 +28,7 @@ left_color_sensor = ColorSensor(Port.B)
 right_color_sensor = ColorSensor(Port.F)
 
 run_01 = Run_01(left_motor, right_motor)
-run_02 = Run_02(left_motor, right_motor)
+run_02 = Run_02(left_motor, right_motor, attachment_motor)
 run_03 = Run_03(left_motor, right_motor, attachment_motor, left_color_sensor, right_color_sensor)
 run_04 = Run_04(left_motor, right_motor, attachment_motor, drive_base)
 run_05 = Run_05(left_motor, right_motor, attachment_motor, left_color_sensor, right_color_sensor)
