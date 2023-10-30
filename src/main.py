@@ -28,6 +28,7 @@ left_color_sensor = ColorSensor(Port.B)
 mission_01_10 = Mission_01_10(left_motor, right_motor, attachment_motor)
 mission_05    = Mission_05(right_color_sensor, left_color_sensor, left_motor, right_motor, attachment_motor)
 mission_06_07 = Mission_06_07(drive_base, attachment_motor)
+mission_08_09 = Mission_08_09(left_motor, right_motor)
 mission_11_12 = Mission_11_12(left_motor, right_motor, attachment_motor)
 # Wait for any button to be pressed
 while True:
@@ -46,6 +47,8 @@ while True:
     elif Button.CENTER in pressed:
         if counter == 1:
             mission_01_10.mission_one()
+        if counter == 2:
+            mission_08_09.run()
         if counter == 5:
             mission_05.run(False)
         elif counter == 6:
