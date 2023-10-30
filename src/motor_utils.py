@@ -7,8 +7,6 @@ class MotorUtils:
 
     def forward(self, speed, distance_cm):
         wheel_distance = 128
-        rotation_per_distance = 276
-        rotation_per_turn = wheel_distance * 3.14159 / 360
         circ_cm = 27.6
         self.left_motor.run_angle(speed, -distance_cm/circ_cm * 360, wait = False)
         self.right_motor.run_angle(speed, distance_cm/circ_cm * 360, wait = False)

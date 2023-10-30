@@ -3,7 +3,7 @@ from pybricks.pupdevices import Motor
 from pybricks.parameters import Port
 from pybricks.tools import wait
 
-class Mission_08_09:
+class Run_01:
     def __init__(self, left_motor, right_motor):
         self.left_motor = left_motor
         self.right_motor = right_motor
@@ -50,7 +50,7 @@ class Mission_08_09:
         self.right_turn(10)
         self.forward(1000,45)
 
-    def mission_2(self):
+    def mission_02(self):
         self.forward(500,63)
         self.left_turn(50)
         self.backwards(100,5)
