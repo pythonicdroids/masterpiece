@@ -1,16 +1,15 @@
 from pybricks.tools import wait
 
-class Mission_05:
-    def __init__(self, right_color_sensor, left_color_sensor, left_motor, right_motor, attachment_motor):
-        self.right_color_sensor = right_color_sensor
-        self.left_color_sensor = left_color_sensor
+class Run_03:
+    def __init__(self, left_motor, right_motor, attachment_motor, left_color_sensor, right_color_sensor):
         self.left_motor = left_motor
         self.right_motor = right_motor
         self.attachment_motor = attachment_motor
+        self.left_color_sensor = left_color_sensor
+        self.right_color_sensor = right_color_sensor
 
-    #defining the  left and right turns
     def right_turn(self, degree):
-        self.left_turn(degree * -1)
+        self.left_turn (degree * -1)
 
     def left_turn(self, degree):
         distance_between_wheels = 143
@@ -74,7 +73,6 @@ class Mission_05:
     def backwards_until_reflection_black(self, speed, reflection, use_right, use_left ):
         self.left_motor.run_angle(speed, 10000, wait = False)
         self.right_motor.run_angle(speed, -10000, wait = False)
-
         while True:
             if use_right == True and use_left == False:
                 if self.right_color_sensor.reflection() < reflection:
@@ -92,36 +90,61 @@ class Mission_05:
         self.left_motor.run_angle(speed, 10000, wait = False)
         self.right_motor.run_angle(speed, -10000, wait = False)
         while True:
+            print(self.right_color_sensor.reflection())
+            wait(500)
             if use_right == True and use_left == False:
-                if self.right_color_sensor.reflection() < reflection and self.right_color_sensor.reflection() > 70 :
+                if self.right_color_sensor.reflection() < reflection and self.right_color_sensor.reflection() > 56 :
                     self.right_motor.brake()
                     self.left_motor.brake()
                     break
 
             if use_right == False and use_left == True:
-                if self.left_color_sensor.reflection() < reflection and self.left_color_sensor.reflection() > 70 :
+                if self.left_color_sensor.reflection() < reflection and self.left_color_sensor.reflection() > 56 :
                     self.right_motor.brake()
                     self.left_motor.brake()
                     break
 
-
-    def run(self, run_mission_8 = False):
-        self.backwards(250, 49)
+    def run(self, doing_mission7):
+        self.backwards(300, 51)
         self.left_turn(68)
-        self.backwards_until_reflection_black(200, 10, False, True)
-        self.left_turn(23)
-        self.right_motor.run_time(-300, 5, wait = False)
-        self.left_motor.run_time(-300, 5, wait = True)
+        self.backwards_until_reflection_black(300, 10, False, True)
+        self.left_turn(21)
+        self.right_motor.run_time(-180, 2200, wait = False)
+        self.left_motor.run_time(180, 2200, wait = True)
+        wait(10)
+        self.left_turn(2)
 
-        if run_mission_8:
-            print("TODO: run mission 8")
-
-        self.forward(100, 10)
-        self.right_turn(92)
-        self.backwards(350, 70)
-        self.right_turn(70)
-        self.backwards(400, 85)
-        
-        #backwards_until_reflection_white(200, 90, True, False)
-        #right_turn(90)
-    
+        if doing_mission7 == True:
+            # self.backwards(270, 50)
+            # self.left_turn(68)
+            # self.backwards_until_reflection_black(200, 10, False, True)
+            # self.left_turn(21)
+            # self.right_motor.run_time(-180, 2200, wait = False)
+            # self.left_motor.run_time(180, 2200, wait = True)
+            # wait(10)
+            # self.left_turn(3)
+            self.forward(100, 18)
+            self.left_turn(94)
+            self.right_motor.run_time(340, 3000, wait = False)
+            self.left_motor.run_time(-340, 3000, wait = True)
+            self.left_turn(20)
+            self.right_motor.run_time(140, 1500, wait = False)
+            self.left_motor.run_time(-140, 1500, wait = True)
+            self.backwards(400, 10)
+            wait(10)
+            self.left_turn(90)
+            self.backwards(400, 70)
+        else:
+            # self.backwards(270, 50)
+            # self.left_turn(68)
+            # self.backwards_until_reflection_black(200, 10, False, True)
+            # self.left_turn(21)
+            # self.right_motor.run_time(-180, 2200, wait = False)
+            # self.left_motor.run_time(180, 2200, wait = True)
+            # wait(10)
+            # self.left_turn(3)
+            self.forward(100, 10)
+            self.right_turn(95)
+            self.backwards(400, 70)
+            self.right_turn(70)
+            self.backwards(600, 100)
