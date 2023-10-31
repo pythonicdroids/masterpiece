@@ -6,8 +6,8 @@ from pybricks.robotics import DriveBase
 from run_01_kavya import Run_01
 from run_02_vivaan import Run_02
 from run_03_aron import Run_03
-from run_04_ishanvi import Run_04
-from run_05_aron import Run_05
+from run_04_aron import Run_04
+from run_05_ishanvi import Run_05
 from run_06_max import Run_06
 
 # Initialize the hub.
@@ -27,11 +27,11 @@ drive_base.settings(200,200,200)
 left_color_sensor = ColorSensor(Port.B)
 right_color_sensor = ColorSensor(Port.F)
 
-run_01 = Run_01(left_motor, right_motor)
+run_01 = Run_01(drive_base, left_motor, right_motor)
 run_02 = Run_02(left_motor, right_motor, attachment_motor)
 run_03 = Run_03(left_motor, right_motor, attachment_motor, left_color_sensor, right_color_sensor)
-run_04 = Run_04(left_motor, right_motor, attachment_motor, drive_base)
-run_05 = Run_05(left_motor, right_motor, attachment_motor, left_color_sensor, right_color_sensor)
+run_04 = Run_04(left_motor, right_motor)
+run_05 = Run_05(left_motor, right_motor, attachment_motor, drive_base)
 run_06 = Run_06(drive_base, attachment_motor)
 # Wait for any button to be pressed
 while True:
@@ -64,6 +64,8 @@ while True:
     elif Button.BLUETOOTH in pressed:
         if counter == 1:
             run_01.mission_02()
+        if counter == 2:
+            run_02.reset_frontmotor()
         if counter == 3:
             run_03.run(True)
         if counter == 6:
