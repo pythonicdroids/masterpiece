@@ -17,7 +17,7 @@ class Run_02:
         rotation_angle = distance_to_rotate / wheel_circumfrence * 360
         self.left_motor.reset_angle(0)
         self.right_motor.reset_angle(0)
-        self.left_motor.run_angle(speed,  rotation_angle,  wait=False)
+        self.left_motor.run_angle(speed,  -rotation_angle,  wait=False)
         self.right_motor.run_angle(speed, rotation_angle,   wait=False) 
         while not self.left_motor.done() or not self.right_motor.done():
             wait(10)
@@ -26,7 +26,7 @@ class Run_02:
     
     def forward(self, speed, distance):
         c_cm = 27.6
-        self.left_motor.run_angle(speed, -distance/c_cm * 360, wait=False)
+        self.left_motor.run_angle(speed, distance/c_cm * 360, wait=False)
         self.right_motor.run_angle(speed, distance/c_cm * 360, wait=False)
         while not self.left_motor.done() or not self.right_motor.done():
             wait(10)
@@ -42,10 +42,20 @@ class Run_02:
         self.front_motor.reset_angle(0)
         self.front_motor.run_angle(speed,  rotation_angle,  wait= True) 
     def mission_one_ten(self):
-        self.left_turn(450,27)
+        #self.left_turn(450,27)
         self.frontmotor(1000,400)
-        self.forward(200,31)
-        self.right_turn(200,115)
+        #self.forward(200,31)
+        #self.right_turn(200,115)
+        print("Forward 500 50")
+        self.forward(500,50)
+        print("wait")
+        wait(2000)
+        print("Left turn 500 45")
+        self.left_turn(500,45)
+        print("wait")
+        wait(2100)
+        self.forward(500,20)
+        self.right_turn(500,45)
         self.forward(200,40)
         self.frontmotor(1000,-400)
         self.left_turn(200,49)
@@ -69,4 +79,5 @@ class Run_02:
         self.forward(200,0.3)
         self.frontmotor(750,1400)
         self.forward(200,-5)
-    
+    def reset_frontmotor(self):
+        self.frontmotor(1000, -300)

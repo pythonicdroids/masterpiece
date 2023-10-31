@@ -4,14 +4,14 @@ from pybricks.parameters import Port
 from pybricks.tools import wait
 
 class Run_01:
-    def __init__(self, left_motor, right_motor):
+    def __init__(self, drive_base, left_motor, right_motor):
         self.left_motor = left_motor
         self.right_motor = right_motor
-    
+        self.drive_base = drive_base
     def forward(self, speed,distance):
         cm = 27.6
-        self.left_motor.run_angle(speed, distance/cm * 360, wait=False)
-        self.right_motor.run_angle(speed, -distance/cm* -360, wait=False)
+        self.left_motor.run_angle(speed, -distance/cm * 360, wait=False)
+        self.right_motor.run_angle(speed, distance/cm* -360, wait=False)
         while not self.left_motor.done() or not self.right_motor.done():
             wait(10)
     
@@ -46,19 +46,19 @@ class Run_01:
 
     def nudge_lever(self):
         self.backwards(speed=300, distance=40)
-        self.left_turn(25)
-        self.right_turn(10)
-        self.forward(1000,45)
+        self.drive_base.turn(-20)
+        self.drive_base.turn(10)
+        self.forward(1000,50)
 
     def mission_02(self):
-        self.forward(500,63)
-        self.left_turn(50)
+        self.forward(500,65)
+        self.drive_base.turn(-40)
         self.backwards(100,5)
         self.forward(800,15)
         self.backwards(100,13)
         self.forward(800, 20)
         self.backwards(200,8)
-        self.right_turn(60)
+        self.drive_base.turn(40)
         self.backwards(1000,63)
     
     def push_camera(self):

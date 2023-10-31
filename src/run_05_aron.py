@@ -23,14 +23,14 @@ class Run_05:
 
         self.left_motor.reset_angle(0)
         self.right_motor.reset_angle(0)
-        self.left_motor.run_angle(speed,  rotation_angle,  wait=False)
+        self.left_motor.run_angle(speed,  -rotation_angle,  wait=False)
         self.right_motor.run_angle(speed, rotation_angle,   wait=False) 
         while not self.left_motor.done() or not self.right_motor.done():
             wait(10)
 
     def forward(self, speed, distance_cm):
         circ_cm = 27.6
-        self.left_motor.run_angle(speed, -distance_cm/circ_cm * 360, wait = False)
+        self.left_motor.run_angle(speed,  distance_cm/circ_cm * 360, wait = False)
         self.right_motor.run_angle(speed, distance_cm/circ_cm * 360, wait = False)
         while not self.left_motor.done() or not self.right_motor.done():
             wait(10)
