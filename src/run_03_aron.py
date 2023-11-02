@@ -66,14 +66,14 @@ class Run_03(MissionBase):
                     break
 
     def run(self, doing_mission7):
-        self.backwards(300, 51)
-        self.left_turn(300, 68)
+        self.backwards(51)
+        self.left_turn(68)
         self.backwards_until_reflection_black(300, 10, False, True)
-        self.left_turn(300, 21)
+        self.left_turn(21)
         self.right_motor.run_time(-180, 2200, wait = False)
         self.left_motor.run_time(-180, 2200, wait = True)
         wait(10)
-        self.left_turn(300, 2)
+        self.left_turn(2)
 
         if doing_mission7 == True:
             # self.backwards(270, 50)
@@ -85,15 +85,15 @@ class Run_03(MissionBase):
             # wait(10)
             # self.left_turn(300, 3)
             self.forward(100, 18)
-            self.left_turn(300, 94)
+            self.left_turn(94)
             self.right_motor.run_time(340, 3000, wait = False)
             self.left_motor.run_time(-340, 3000, wait = True)
-            self.left_turn(300, 20)
+            self.left_turn(20)
             self.right_motor.run_time(140, 1500, wait = False)
             self.left_motor.run_time(-140, 1500, wait = True)
             self.backwards(400, 10)
             wait(10)
-            self.left_turn(300, 90)
+            self.left_turn(90)
             self.backwards(400, 70)
         else:
             # self.backwards(270, 50)
@@ -105,7 +105,7 @@ class Run_03(MissionBase):
             # wait(10)
             # self.left_turn(300, 3)
             self.forward(100, 10)
-            self.right_turn(300, 95)
+            self.right_turn(95)
             self.backwards(400, 70)
-            self.right_turn(300, 70)
+            self.right_turn(70)
             self.backwards(600, 100)

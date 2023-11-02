@@ -38,7 +38,7 @@ class Run_02(MissionBase):
         self.frontmotor(750,1400)
         self.forward(200,-5)
     def mission_one(self):
-        self.left_turn(450,20)
+        self.left_turn(20, 450)
         self.frontmotor(1000,400)
         self.forward(200,30)
         self.right_motor.run_time(-200, 600, wait = False)
