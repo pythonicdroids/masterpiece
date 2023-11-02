@@ -2,6 +2,12 @@
 
 This repository contains the Pythonic Droids' assets for FIRST LEGO League 2023-2024 MASTERPIECE challenge.
 
+## Presentations
+
+[Robotic Design](https://docs.google.com/presentation/d/1uBpYO9K1fqdiR3ng6SrpVy5U_a1IZoeq/edit#slide=id.p2)
+
+[Innovation Project](https://docs.google.com/presentation/d/1LyQJY11dDN7NfBeW6JQiYmBaA7brbhsDq2iDwWko628/edit#slide=id.p)
+
 ## Prerequisites
 
 To use this repository, you need to do the following:
@@ -187,7 +193,3 @@ AR glasses to show you how to do an art and also it teaches cool things about th
 # MAIN IDEA NOTES
 AR Glasses
 In the AR playspace it will teach you piano by bars dropping on the keys for you to play it and teaches you keyys to play has harmonics and tempo tells where you made a mistake and helps you fix it. to get you interested teaches you how the piano keys work and how it is tuned
-
-
-
- heres the link [Innovation Project Presentation](https://docs.google.com/presentation/d/1LyQJY11dDN7NfBeW6JQiYmBaA7brbhsDq2iDwWko628/edit#slide=id.p)
