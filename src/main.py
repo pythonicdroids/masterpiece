@@ -13,7 +13,7 @@ from run_06_max import Run_06
 # Initialize the hub.
 hub = PrimeHub()
 # Change the stop button
-hub.system.set_stop_button((Button.CENTER, Button.BLUETOOTH))
+hub.system.set_stop_button((Button.BLUETOOTH))
 
 hub.display.orientation(Side.LEFT)
 counter = 1
@@ -45,31 +45,27 @@ while True:
     if Button.RIGHT in pressed:
         if counter > 1:
             counter = counter - 1
+        else:
+            run_02.reset_frontmotor()
+
     elif Button.LEFT in pressed:
         counter = counter + 1
     elif Button.CENTER in pressed:
         if counter == 1:
-            run_01.nudge_lever()
-        if counter == 2:
+            # run_01.nudge_lever()
             run_02.mission_one()
+        if counter == 2:
+            run_01.mission_02()
         if counter == 3:
-            run_03.run(False)
+            run_03.run(True)
         if counter == 4:
             run_04.run()
         elif counter == 5:
             run_05.run()
         elif counter == 6:
-            run_06.run()
-
-    elif Button.BLUETOOTH in pressed:
-        if counter == 1:
-            run_01.mission_02()
-        if counter == 2:
-            run_02.reset_frontmotor()
-        if counter == 3:
-            run_03.run(True)
-        if counter == 6:
             run_01.push_camera()
+        elif counter == 7:
+            run_06.run()
 
     # Display the number so we know where we are
     hub.display.number(counter)
