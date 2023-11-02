@@ -38,10 +38,12 @@ class Run_02(MissionBase):
         self.frontmotor(750,1400)
         self.forward(200,-5)
     def mission_one(self):
-        self.left_turn(450,25)
-        self.frontmotor(1000,350)
-        self.forward(200,28.25)
-        self.right_turn(200,200)
+        self.left_turn(450,20)
+        self.frontmotor(1000,400)
+        self.forward(200,30)
+        self.right_motor.run_time(-200, 600, wait = False)
+        self.left_motor.run_time(200, 600, wait = True)
+        self.forward(200,-25)
     def mission_ten(self):
         self.forward(200,44)
         self.frontmotor(750,1400)
@@ -51,4 +53,4 @@ class Run_02(MissionBase):
         self.frontmotor(750,1400)
         self.forward(200,-5)
     def reset_frontmotor(self):
-        self.frontmotor(500,-350)
+        self.frontmotor(500,-400)
