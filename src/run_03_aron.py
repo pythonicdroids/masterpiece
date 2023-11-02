@@ -66,7 +66,7 @@ class Run_03(MissionBase):
                     break
 
     def run(self, doing_mission7):
-        self.backwards(51)
+        self.backwards(300, 51)
         self.left_turn(68)
         self.backwards_until_reflection_black(300, 10, False, True)
         self.left_turn(300, 21)
