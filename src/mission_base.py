@@ -18,7 +18,7 @@ class MissionBase:
     def backwards(self, speed, distance_cm):
         self.forward(speed, -distance_cm)
         
-    def left_turn(self, speed, degree):
+    def left_turn(self, degree, speed = 300):
         distance_between_wheels = 143
         pi = 3.14159
         wheel_diameter = 88
@@ -36,5 +36,5 @@ class MissionBase:
         while not self.left_motor.done() or not self.right_motor.done():
             wait(10)
 
-    def right_turn(self, speed, degree):
-        self.left_turn(speed,degree * -1)
+    def right_turn(self, degree, speed = 300):
+        self.left_turn(degree * -1, speed)

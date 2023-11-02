@@ -11,7 +11,7 @@ class Run_04(MissionBase):
         self.forward(300, 69)
         self.left_turn(20, 200)
         self.backwards(300, 15)
-        self.right_turn(21, 300)
+        self.right_turn(21)
         self.backwards(400, 57)
         self.right_turn(116, 500)
         self.forward(395, 55)
