@@ -1,6 +1,6 @@
 from pybricks.hubs import PrimeHub
 from pybricks.parameters import Button, Side, Port, Direction
-from pybricks.tools import wait
+from pybricks.tools import wait, StopWatch
 from pybricks.pupdevices import Motor, ColorSensor
 from pybricks.robotics import DriveBase
 from run_01_kavya import Run_01
@@ -33,6 +33,8 @@ run_03 = Run_03(left_motor, right_motor, attachment_motor, left_color_sensor, ri
 run_04 = Run_04(left_motor, right_motor)
 run_05 = Run_05(left_motor, right_motor, attachment_motor, drive_base)
 run_06 = Run_06(drive_base, attachment_motor)
+stopWatch = StopWatch()
+
 # Wait for any button to be pressed
 while True:
     pressed = []
@@ -45,12 +47,16 @@ while True:
     if Button.RIGHT in pressed:
         if counter > 1:
             counter = counter - 1
-        else:
-            run_02.reset_frontmotor()
+        #else:
+        #    run_02.reset_frontmotor()
 
     elif Button.LEFT in pressed:
         counter = counter + 1
     elif Button.CENTER in pressed:
+        if counter == 1:
+            stopWatch.reset()
+        startTime = stopWatch.time()/1000
+        print("Mission ", counter, " starting,  elapsed: \t", startTime)
         if counter == 1:
             # run_01.nudge_lever()
             run_02.mission_one()
@@ -66,6 +72,8 @@ while True:
             run_01.push_camera()
         elif counter == 7:
             run_06.run()
+        endTime = stopWatch.time()/1000
+        print("Mission ", counter, " completed, elapsed: \t", endTime, ", took: ", endTime - startTime)
 
     # Display the number so we know where we are
     hub.display.number(counter)

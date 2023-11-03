@@ -14,6 +14,7 @@ class MissionBase:
         self.right_motor.run_angle(speed, distance_cm/circ_cm * 360, wait = False)
         while not self.left_motor.done() or not self.right_motor.done():
             wait(10)
+        self.stop()
 
     def backwards(self, speed, distance_cm):
         self.forward(speed, -distance_cm)
@@ -35,6 +36,11 @@ class MissionBase:
         self.right_motor.run_angle(speed, rotation_angle,   wait=False) 
         while not self.left_motor.done() or not self.right_motor.done():
             wait(10)
+        self.stop()
+
+    def stop(self):
+        self.left_motor.stop()
+        self.right_motor.stop()
 
     def right_turn(self, degree, speed = 300):
         self.left_turn(degree * -1, speed)

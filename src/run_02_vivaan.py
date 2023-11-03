@@ -39,11 +39,10 @@ class Run_02(MissionBase):
         self.forward(200,-5)
     def mission_one(self):
         self.left_turn(20, 450)
-        self.frontmotor(1000,400)
-        self.forward(200,30)
+        self.forward(500,22)
         self.right_motor.run_time(-200, 600, wait = False)
         self.left_motor.run_time(200, 600, wait = True)
-        self.forward(200,-25)
+        self.forward(500,-25)
     def mission_ten(self):
         self.forward(200,44)
         self.frontmotor(750,1400)

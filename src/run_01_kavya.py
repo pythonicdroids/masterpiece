@@ -12,12 +12,11 @@ class Run_01(MissionBase):
     def nudge_lever(self):
         distance = 250
         self.drive_base.straight(distance)
-        self.drive_base.turn(-30)
-        self.drive_base.turn(30)
+        self.drive_base.turn(-20)
+        self.drive_base.turn(20)
         self.drive_base.straight(-distance)
 
     def mission_02(self):
-        print("Starting mission 2")
         self.backwards(500,65)
         self.drive_base.turn(-40)
         self.forward(100,5)
@@ -29,5 +28,5 @@ class Run_01(MissionBase):
         self.forward(1000,63)
     
     def push_camera(self):
-       self.forward(200,45)
-       self.backwards(1000, 45)
+       self.backwards(200,45)
+       self.forward(1000, 45)
