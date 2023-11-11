@@ -1,8 +1,8 @@
 from mission_base import MissionBase
 
 class Run_05(MissionBase):
-    def __init__(self, left_motor, right_motor, attachment_motor, drive_base):
-        super().__init__(left_motor, right_motor)
+    def __init__(self, left_motor, right_motor, side_motor, attachment_motor, drive_base):
+        super().__init__(left_motor, right_motor, side_motor)
         self.attachment_motor = attachment_motor
         self.drive_base = drive_base
 

@@ -1,12 +1,12 @@
 from pybricks.tools import wait
 
 class MissionBase:
-    def __init__(self, left_motor, right_motor):
+    def __init__(self, left_motor, right_motor, side_motor):
         self.left_motor = left_motor
         self.right_motor = right_motor
+        self.side_motor = side_motor
 
     def forward(self, speed, distance_cm):
-        wheel_distance = 128
         circ_cm = 27.6
         self.left_motor.reset_angle(0)
         self.right_motor.reset_angle(0)

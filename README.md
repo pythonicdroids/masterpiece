@@ -62,6 +62,51 @@ Once the Spike Prime hub has been flashed with Pybricks firmware, it no longer w
 - Click the `Restore Official LEGO Firmware` button.
 - Follow the instructions on the screen.
 
+## VS Code
+
+### Setup [pybricksdev](https://pybricks.com/projects/tutorials/dev/tools/vscode/)
+
+#### Install [pipx](https://pypa.github.io/pipx/installation/)
+
+```bash
+python3 -m pip install --user pipx
+python3 -m pipx ensurepath
+```
+
+#### Install pybricksdev
+
+```bash
+pipx install pybricksdev
+```
+
+#### Install [NodeJS](https://nodejs.org/en/download) by downloading installers for your Operating System and run them.
+
+#### Install `npm` packages
+
+```bash
+npm install
+```
+
+#### Run pybricks code on `PD3`
+
+```bash
+npm run pd3 
+```
+
+#### Run pybricks code on `PD4`
+
+```bash
+npm run pd4
+```
+
+#### Upgrade `pybricksdev`
+
+```bash
+pipx upgrade pybricksdev
+```
+
+#### Press `Ctrl+C` to stop the running program
+
 ## Start Coding
 
 #### Create a feature branch
@@ -69,7 +114,7 @@ Once the Spike Prime hub has been flashed with Pybricks firmware, it no longer w
 In order to work collaboratively, we should all work in our own branches. Before making any changes, you should create a local branch from the `main` branch. You can learn more about what is a branch [here](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
 
 ```shell
-git branch -b feature/max/<branch-name>
+git branch -b <branch-name>
 ```
 
 #### Commit changes
@@ -77,7 +122,7 @@ git branch -b feature/max/<branch-name>
 You should commit your changes to your local repository once you are done with your changes or just want make a check point.
 
 ```shell
-git commit -am "SOME MEANINGFUL MESSAGE EXPLAINING WHAT THE CHANGES ARE ABOUT"
+git commit -m "SOME MEANINGFUL MESSAGE EXPLAINING WHAT THE CHANGES ARE ABOUT"
 ```
 
 #### Push changes
@@ -85,7 +130,7 @@ git commit -am "SOME MEANINGFUL MESSAGE EXPLAINING WHAT THE CHANGES ARE ABOUT"
 After you are done with all your changes, you should push your changes to Github so others have access to them too.
 
 ```shell
-git push --set-upstream origin max/<branch-name>
+git push --set-upstream origin <branch-name>
 ```
 
 You should be able to see your branch listed in Github afterwards.

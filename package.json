@@ -1,0 +1,8 @@
+{
+  "name": "pythonic-droids-masterpiece",
+  "private": true,
+  "scripts": {
+    "pd3": "pybricksdev run ble --name 'PD3' src/main.py",
+    "pd4": "pybricksdev run ble --name 'PD4' src/main.py"
+  }
+}

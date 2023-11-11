@@ -2,8 +2,8 @@ from pybricks.tools import wait
 from mission_base import MissionBase
 
 class Run_02(MissionBase):
-    def __init__(self, left_motor, right_motor, front_motor):
-        super().__init__(left_motor, right_motor)
+    def __init__(self, left_motor, right_motor, side_motor, front_motor):
+        super().__init__(left_motor, right_motor, side_motor)
         self.front_motor = front_motor
 
     def frontmotor(self,speed,degree):

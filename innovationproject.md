@@ -1,6 +1,6 @@
-#Virtual Piano Teacher (we can change the name)
+# Everywhere Piano
 
-##This is a virtual piano teacher. It will recognize the notes you are playing and give you feedback based on the mistakes you made.
+## This is a virtual piano teacher. It will recognize the notes you are playing and give you feedback based on the mistakes you made.
 ### Features
 - Recognize what note you are playing and display it on a AR/screen display
 - Compare the song you are playing with how its supposed to be played, then give you audio/visual feedback

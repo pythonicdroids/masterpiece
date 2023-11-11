@@ -5,8 +5,8 @@ from pybricks.tools import wait
 from mission_base import MissionBase
 
 class Run_01(MissionBase):
-    def __init__(self, drive_base, left_motor, right_motor):
-        super().__init__(left_motor, right_motor)
+    def __init__(self, drive_base, left_motor, right_motor, side_motor):
+        super().__init__(left_motor, right_motor, side_motor)
         self.drive_base = drive_base
     
     def nudge_lever(self):
