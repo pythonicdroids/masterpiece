@@ -83,7 +83,7 @@ while True:
         if counter == 4:
             run_04.run()
         elif counter == 5:
-            run_05.run()
+            run_05.run2()
         elif counter == 6:
             run_01.push_camera()
         elif counter == 7:

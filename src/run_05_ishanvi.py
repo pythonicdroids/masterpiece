@@ -20,3 +20,17 @@ class Run_05(MissionBase):
         #self.backwards(250,-19)
         self.attachment_motor.run_angle(1200, 2600)
         self.backwards(300, 48)
+
+    def run2(self):
+        self.drive_base.straight(235)
+        self.side_motor.run_angle(100, 100)
+        self.drive_base.straight(67)
+        self.attachment_motor.run_angle(800, 2600)
+        self.drive_base.straight(-200)
+        self.drive_base.turn(-38)
+        self.drive_base.straight(120)
+        self.drive_base.turn(8)
+        self.drive_base.curve(1200, -10)
+        self.drive_base.straight(500)
+        self.drive_base.turn(-40)
+        self.drive_base.straight(200)
