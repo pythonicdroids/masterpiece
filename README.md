@@ -8,6 +8,10 @@ This repository contains the Pythonic Droids' assets for FIRST LEGO League 2023-
 
 [Innovation Project](https://docs.google.com/presentation/d/1LyQJY11dDN7NfBeW6JQiYmBaA7brbhsDq2iDwWko628/edit#slide=id.p)
 
+## Innovation Survey
+
+[Innovation Survey] (https://docs.google.com/forms/d/e/1FAIpQLSf_0if91piyFcGbLV1wCc7qWI2Il-4rCGTENGe8hz3fVQ1H3Q/viewform)
+
 ## Prerequisites
 
 To use this repository, you need to do the following:
