@@ -5,9 +5,10 @@ from pybricks.tools import wait
 from mission_base import MissionBase
 
 class Run_01(MissionBase):
-    def __init__(self, drive_base, left_motor, right_motor, side_motor):
+    def __init__(self, drive_base, left_motor, right_motor, attachment_motor, side_motor):
         super().__init__(left_motor, right_motor, side_motor)
         self.drive_base = drive_base
+        self.attachment_motor = attachment_motor
     
     def nudge_lever(self):
         distance = 250
@@ -30,3 +31,11 @@ class Run_01(MissionBase):
     def push_camera(self):
        self.backwards(200,45)
        self.forward(1000, 45)
+
+    def mission_8_and_9(self):
+       #self.drive_base.straight(200)
+       self.drive_base.straight(200)
+       self.attachment_motor.run_angle(200, 400)
+       wait(1000)
+       self.drive_base.straight(-290)
+       self.attachment_motor.run_angle(700, -380)
