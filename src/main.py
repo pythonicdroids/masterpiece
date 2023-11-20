@@ -28,7 +28,7 @@ drive_base.settings(200,200,200)
 left_color_sensor = ColorSensor(Port.B)
 right_color_sensor = ColorSensor(Port.F)
 
-run_01 = Run_01(drive_base, left_motor, right_motor, side_motor)
+run_01 = Run_01(drive_base, left_motor, right_motor, attachment_motor, side_motor)
 run_02 = Run_02(left_motor, right_motor, attachment_motor, side_motor)
 run_03 = Run_03(left_motor, right_motor, attachment_motor, left_color_sensor, right_color_sensor, side_motor)
 run_04 = Run_04(left_motor, right_motor, side_motor)
@@ -77,7 +77,7 @@ while True:
             # run_01.nudge_lever()
             run_02.mission_one()
         if counter == 2:
-            run_01.mission_02()
+            run_01.mission_8_and_9()
         if counter == 3:
             run_03.run(True)
         if counter == 4:
