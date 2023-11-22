@@ -2,25 +2,27 @@ from pybricks.tools import wait
 from mission_base import MissionBase
 
 class Run_04(MissionBase):
-    def __init__(self, left_motor, right_motor, side_motor):
+    def __init__(self, left_motor, right_motor, side_motor, drive_base):
         super().__init__(left_motor, right_motor, side_motor)
+        self.drive_base = drive_base
 
-    def run_old(self):
-        self.forward(250, 65)
-        self.right_turn(84, 100)
-        self.forward(300, 69)
-        self.left_turn(20, 200)
-        self.backwards(300, 15)
-        self.right_turn(21)
-        self.backwards(400, 57)
-        self.right_turn(116, 500)
-        self.forward(395, 55)
 
     def run(self):
-        self.forward(250, 68)
-        self.backwards(200, 4)
-        self.right_turn(77, 100)
-        self.forward(300, 69)
-        self.backwards(400, 66)
-        self.right_turn(108, 400)
-        self.forward(400, 50)
+        # settings(straight_speed, straight_acceleration, turn_rate, turn_acceleration)
+        self.drive_base.curve(500, -92)
+        self.drive_base_settings = self.drive_base.settings()
+        self.drive_base.settings(turn_rate = 50)
+        self.drive_base.turn(59)
+        self.drive_base.straight(30)
+        self.drive_base.straight(-70)
+        self.drive_base.turn(70)
+        self.drive_base.straight(100)
+        self.drive_base.settings(straight_speed = 200, turn_rate = 100)
+        self.drive_base.turn(62)
+        self.drive_base.straight(380)
+        self.drive_base.turn(90)
+        self.drive_base.straight(-70)
+        self.drive_base.curve(1000, -30)
+
+
+
