@@ -1,5 +1,5 @@
 from pybricks.tools import wait
-from mission_base import MissionBase
+from robot import Robot
 
 class Run_02():
     def __init__(self, robot):

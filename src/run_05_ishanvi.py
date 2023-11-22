@@ -1,4 +1,4 @@
-from mission_base import MissionBase
+from robot import Robot
 
 class Run_05():
     def __init__(self, robot):
