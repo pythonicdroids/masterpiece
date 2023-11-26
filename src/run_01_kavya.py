@@ -35,8 +35,6 @@ class Run_01():
         self.robot.drive_base.straight(-80)
         self.robot.attachment_motor.run_angle(100, -turn_angle)
         self.robot.drive_base.straight(-150)
-        self.robot.backwards(200,45)
-        self.robot.forward(1000, 45)
 
     def mission_8_and_9(self):
        #self.robot.drive_base.straight(200)
