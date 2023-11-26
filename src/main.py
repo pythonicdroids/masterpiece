@@ -1,8 +1,7 @@
 from pybricks.hubs import PrimeHub
 from pybricks.parameters import Button, Side, Port, Direction, Icon
 from pybricks.tools import wait, StopWatch
-from pybricks.pupdevices import Motor, ColorSensor
-from pybricks.robotics import DriveBase
+from robot import Robot
 from run_01_kavya import Run_01
 from run_02_vivaan import Run_02
 from run_03_aron import Run_03
@@ -19,26 +18,25 @@ hub.display.orientation(Side.LEFT)
 counter = 1
 hub.display.number(counter)
 
-left_motor = Motor(Port.A, Direction.COUNTERCLOCKWISE)
-right_motor = Motor(Port.E)
-attachment_motor = Motor(Port.D)
-side_motor = Motor(Port.C)
-drive_base = DriveBase(left_motor, right_motor, wheel_diameter = 56, axle_track = 112)
-drive_base.settings(200,200,200)
-left_color_sensor = ColorSensor(Port.B)
-right_color_sensor = ColorSensor(Port.F)
+robot = Robot(  left_motor_port = Port.A, \
+                right_motor_port = Port.E, \
+                attachment_motor_port = Port.D, \
+                side_motor_port = Port.C, \
+                wheel_diameter = 56, axle_track = 112, \
+                left_color_sensor_port = Port.B, \
+                right_color_sensor_port = Port.F)
 
-run_01 = Run_01(drive_base, left_motor, right_motor, side_motor)
-run_02 = Run_02(left_motor, right_motor, attachment_motor, side_motor)
-run_03 = Run_03(left_motor, right_motor, attachment_motor, left_color_sensor, right_color_sensor, side_motor)
-run_04 = Run_04(left_motor, right_motor, side_motor)
-run_05 = Run_05(left_motor, right_motor, side_motor, attachment_motor, drive_base)
-run_06 = Run_06(drive_base, attachment_motor, side_motor)
+run_01 = Run_01(robot)
+run_02 = Run_02(robot)
+run_03 = Run_03(robot)
+run_04 = Run_04(robot)
+run_05 = Run_05(robot)
+run_06 = Run_06(robot)
 stop_watch = StopWatch()
 
 def set_gyro(use_gyro):
     print("Setting use_gyro to", use_gyro)
-    drive_base.use_gyro(use_gyro)
+    robot.drive_base.use_gyro(use_gyro)
     if use_gyro:
         hub.display.icon(Icon.TRUE)
     else:
@@ -77,7 +75,7 @@ while True:
             # run_01.nudge_lever()
             run_02.mission_one()
         if counter == 2:
-            run_01.mission_02()
+            run_01.mission_8_and_9()
         if counter == 3:
             run_03.run(True)
         if counter == 4:
