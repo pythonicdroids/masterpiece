@@ -4,7 +4,7 @@ This repository contains the Pythonic Droids' assets for FIRST LEGO League 2023-
 
 ## YouTube Channel
 
-[@PythonicDroid](https://www.youtube.com/@PythonicDroid)
+[@PythonicDroids](https://www.youtube.com/@PythonicDroids)
 
 ## Presentations
 
