@@ -1,10 +1,21 @@
+from pybricks.parameters import Port, Direction
+from pybricks.pupdevices import Motor, ColorSensor
+from pybricks.robotics import DriveBase
 from pybricks.tools import wait
 
-class MissionBase:
-    def __init__(self, left_motor, right_motor, side_motor):
-        self.left_motor = left_motor
-        self.right_motor = right_motor
-        self.side_motor = side_motor
+class Robot:
+    def __init__(self, left_motor_port, right_motor_port, \
+                attachment_motor_port, side_motor_port, \
+                left_color_sensor_port, right_color_sensor_port,
+                wheel_diameter, axle_track):
+        self.left_motor = Motor(left_motor_port, Direction.COUNTERCLOCKWISE)
+        self.right_motor = Motor(right_motor_port)
+        self.attachment_motor = Motor(attachment_motor_port)
+        self.side_motor = Motor(side_motor_port)
+        self.drive_base = DriveBase(self.left_motor, self.right_motor, wheel_diameter, axle_track)
+        self.drive_base.settings(200,200,200)
+        self.left_color_sensor = ColorSensor(left_color_sensor_port)
+        self.right_color_sensor = ColorSensor(right_color_sensor_port)
 
     def forward(self, speed, distance_cm):
         circ_cm = 27.6
