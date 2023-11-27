@@ -73,7 +73,7 @@ while True:
         print("Mission ", counter, " starting,  elapsed: \t", start_time)
         if counter == 1:
             # run_01.nudge_lever()
-            run_02.mission_one()
+            run_02.mission_10()
         if counter == 2:
             run_01.mission_8_and_9()
         if counter == 3:
