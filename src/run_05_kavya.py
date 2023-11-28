@@ -47,7 +47,7 @@ class Run_05():
        self.robot.drive_base.straight(200)
        self.robot.attachment_motor.run_angle(80, 400)
        wait(1000)
-       self.robot.drive_base.straight(-220)
+       self.robot.drive_base.straight(-230)
        self.robot.drive_base.straight(20)
        self.robot.attachment_motor.run_angle(700, -430)
        self.robot.drive_base.straight(-20)

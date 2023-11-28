@@ -3,7 +3,7 @@ class Run_03():
         self.robot = robot
 
     def run(self):
-        light_show_turn_angle = 475
+        light_show_turn_angle = 700
 
         distance_ratio = 56 / 88
      
