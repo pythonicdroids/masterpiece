@@ -87,6 +87,7 @@ while True:
         end_time = stop_watch.time()/1000
         print("Mission ", counter, " completed, elapsed: \t", end_time, ", took: ", end_time - start_time)
 
+    robot.reset()
     # Display the number so we know where we are
     hub.display.number(counter)
     hub.speaker.beep()

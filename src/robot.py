@@ -55,3 +55,9 @@ class Robot:
 
     def right_turn(self, degree, speed = 300):
         self.left_turn(degree * -1, speed)
+
+    def reset(self):
+        self.drive_base.stop()
+        self.drive_base.reset()
+        self.attachment_motor.reset_angle()
+        self.side_motor.reset_angle()

@@ -17,13 +17,16 @@ class Run_02():
         self.robot.attachment_motor.run_angle(speed,  rotation_angle,  wait=True) 
 
     def mission_ten(self):
-        self.robot.drive_base.straight(370)
-        self.robot.drive_base.straight(-3.5)
-        self.frontmotor(1800,1600)
-        self.robot.drive_base.turn(50)
-        wait(500)
-        self.robot.drive_base.turn(300)
+        self.robot.drive_base.straight(230)
+        self.robot.drive_base.straight(-20)
+        self.frontmotor(1800,1500)
+        self.robot.drive_base.turn(5)
+        self.robot.drive_base.turn(5)
+        self.robot.drive_base.turn(10)
+        wait(1000)
+        self.robot.drive_base.turn(150)
         self.robot.drive_base.straight(25)
+        self.frontmotor(1800,-1500)
 
     def mission_10(self):
         self.robot.drive_base.straight(250)
