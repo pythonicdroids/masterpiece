@@ -2,6 +2,10 @@
 
 This repository contains the Pythonic Droids' assets for FIRST LEGO League 2023-2024 MASTERPIECE challenge.
 
+## YouTube Channel
+
+[@PythonicDroids](https://www.youtube.com/@PythonicDroids)
+
 ## Presentations
 
 [Robotic Design](https://docs.google.com/presentation/d/1uBpYO9K1fqdiR3ng6SrpVy5U_a1IZoeq/edit#slide=id.p2)

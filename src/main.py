@@ -59,9 +59,6 @@ while True:
     if Button.RIGHT in pressed:
         if counter > 1:
             counter = counter - 1
-        else:
-            use_gyro = not use_gyro
-            set_gyro(use_gyro)
 
     elif Button.LEFT in pressed:
         counter = counter + 1
@@ -73,7 +70,8 @@ while True:
         print("Mission ", counter, " starting,  elapsed: \t", start_time)
         if counter == 1:
             # run_01.nudge_lever()
-            run_02.mission_one()
+            # run_02.mission_10()
+            run_02.mission_ten()
         if counter == 2:
             run_01.mission_8_and_9()
         if counter == 3:
