@@ -41,7 +41,6 @@ class Run_05():
        self.forward(1000, 45)
 
     def mission_8_and_9(self):
-       #self.drive_base.straight(200)
        self.robot.left_motor.reset_angle(0)
        self.robot.right_motor.reset_angle(0)
        self.robot.drive_base.straight(200)
@@ -51,4 +50,3 @@ class Run_05():
        self.robot.drive_base.straight(20)
        self.robot.attachment_motor.run_angle(700, -430)
        self.robot.drive_base.straight(-20)
-       #self.drive_base.straight(-90)

@@ -6,7 +6,6 @@ class Run_01():
         self.robot = robot
 
     def run(self):
-        # settings(straight_speed, straight_acceleration, turn_rate, turn_acceleration)
         self.robot.drive_base.curve(500, -92)
         self.robot.drive_base_settings = self.robot.drive_base.settings()
         self.robot.drive_base.settings(turn_rate = 50)

@@ -16,7 +16,6 @@ class Run_02():
         self.robot.right_motor.run_time(170, 2200, wait = False)
         self.robot.left_motor.run_time(170, 2200, wait = True)
         self.robot.stop()
-        #self.robot.backwards(250,-19)
         self.robot.attachment_motor.run_angle(1200, 2600)
         self.robot.backwards(300, 48)
 

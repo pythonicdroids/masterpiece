@@ -8,7 +8,6 @@ from run_03_max import Run_03
 from run_04_vivaan import Run_04
 from run_05_kavya import Run_05
 from run_06_aron import Run_06
-from run_07_max import Run_07
 
 # Initialize the hub.
 hub = PrimeHub()
@@ -63,7 +62,7 @@ while True:
     elif Button.LEFT in pressed:
         counter = counter + 1
     elif Button.CENTER in pressed:
-        if counter == 0 and not stop_watch_reseted:
+        if counter == 1 and not stop_watch_reseted:
             stop_watch.reset()
             stop_watch_reseted = True
         start_time = stop_watch.time()/1000
@@ -72,7 +71,6 @@ while True:
             run_01.run()
         elif counter == 2:
             run_02.run2()
-            run_01.mission_8_and_9()
         elif counter == 3:
             run_03.run()
         elif counter == 4:
@@ -81,12 +79,12 @@ while True:
             run_05.mission_8_and_9()
         elif counter == 6:
             run_06.run()
-        elif counter == 7:
-            run_06.run()
         end_time = stop_watch.time()/1000
         print("Mission ", counter, " completed, elapsed: \t", end_time, ", took: ", end_time - start_time)
 
     robot.reset()
+    # Increase the counter automatically to speed things up
+    counter = counter + 1
     # Display the number so we know where we are
     hub.display.number(counter)
     hub.speaker.beep()
