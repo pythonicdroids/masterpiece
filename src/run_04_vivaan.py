@@ -1,6 +1,6 @@
 from pybricks.tools import wait
 
-class Run_02():
+class Run_04():
     def __init__(self, robot):
         self.robot = robot
 

@@ -1,7 +1,7 @@
 from robot import Robot
 from pybricks.parameters import Stop
 
-class Run_05():
+class Run_02():
     def __init__(self, robot):
         self.robot = robot
 

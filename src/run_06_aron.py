@@ -1,7 +1,7 @@
 from pybricks.tools import wait
 from robot import Robot
 
-class Run_03():
+class Run_06():
     def __init__(self, robot):
         self.robot = robot
     #align to black lign for light show(only using right motor to detect the color)
@@ -63,15 +63,15 @@ class Run_03():
 
     
     def turn_until_right(self, speed, heading_val):
-        right_motor.run_angle(speed, 10000, wait = False)
-        left_motor.run_angle(speed, -10000, wait = False)
+        self.right_motor.run_angle(speed, 10000, wait = False)
+        self.left_motor.run_angle(speed, -10000, wait = False)
         while True:
-            if imu.heading() == heading_val:
+            if self.imu.heading() == heading_val:
                 self.robot.right_motor.brake()
                 self.robot.left_motor.brake()
                 break
 
-    def run(self, doing_mission7):
+    def run(self):
 
         self.robot.drive_base.curve(500, -90)
         # Finished mission 3
