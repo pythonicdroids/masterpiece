@@ -36,10 +36,19 @@ class Run_05():
         self.robot.attachment_motor.run_angle(100, -turn_angle)
         self.robot.drive_base.straight(-150)
 
+    def push_camera(self):
+       self.backwards(200,45)
+       self.forward(1000, 45)
+
     def mission_8_and_9(self):
-       #self.robot.drive_base.straight(200)
-       self.robot.drive_base.straight(200)
-       self.robot.attachment_motor.run_angle(200, 400)
+       #self.drive_base.straight(200)
+       self.left_motor.reset_angle(0)
+       self.right_motor.reset_angle(0)
+       self.drive_base.straight(200)
+       self.attachment_motor.run_angle(80, 400)
        wait(1000)
-       self.robot.drive_base.straight(-290)
-       self.robot.attachment_motor.run_angle(700, -380)
+       self.drive_base.straight(-220)
+       self.drive_base.straight(20)
+       self.attachment_motor.run_angle(700, -430)
+       self.drive_base.straight(-20)
+       #self.drive_base.straight(-90)
