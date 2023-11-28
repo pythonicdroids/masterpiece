@@ -2,6 +2,7 @@ from pybricks.hubs import PrimeHub
 from pybricks.parameters import Button, Side, Port, Direction, Icon
 from pybricks.tools import wait, StopWatch
 from robot import Robot
+from run_00_max import Run_00
 from run_01_kavya import Run_01
 from run_02_vivaan import Run_02
 from run_03_aron import Run_03
@@ -15,7 +16,7 @@ hub = PrimeHub()
 hub.system.set_stop_button((Button.BLUETOOTH))
 
 hub.display.orientation(Side.LEFT)
-counter = 1
+counter = 0
 hub.display.number(counter)
 
 robot = Robot(  left_motor_port = Port.A, \
@@ -25,7 +26,7 @@ robot = Robot(  left_motor_port = Port.A, \
                 wheel_diameter = 56, axle_track = 112, \
                 left_color_sensor_port = Port.B, \
                 right_color_sensor_port = Port.F)
-
+run_00 = Run_00(robot)
 run_01 = Run_01(robot)
 run_02 = Run_02(robot)
 run_03 = Run_03(robot)
@@ -57,26 +58,28 @@ while True:
         wait(100)
 
     if Button.RIGHT in pressed:
-        if counter > 1:
+        if counter > 0:
             counter = counter - 1
 
     elif Button.LEFT in pressed:
         counter = counter + 1
     elif Button.CENTER in pressed:
-        if counter == 1 and not stop_watch_reseted:
+        if counter == 0 and not stop_watch_reseted:
             stop_watch.reset()
             stop_watch_reseted = True
         start_time = stop_watch.time()/1000
         print("Mission ", counter, " starting,  elapsed: \t", start_time)
-        if counter == 1:
+        if counter == 0:
+            run_00.run()
+        elif counter == 1:
             # run_01.nudge_lever()
             # run_02.mission_10()
             run_02.mission_ten()
-        if counter == 2:
+        elif counter == 2:
             run_01.mission_8_and_9()
-        if counter == 3:
+        elif counter == 3:
             run_03.run(True)
-        if counter == 4:
+        elif counter == 4:
             run_04.run()
         elif counter == 5:
             run_05.run2()
