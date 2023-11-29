@@ -81,10 +81,10 @@ while True:
             run_06.run()
         end_time = stop_watch.time()/1000
         print("Mission ", counter, " completed, elapsed: \t", end_time, ", took: ", end_time - start_time)
-
+        # Increase the counter automatically to speed things up
+        # counter = counter + 1
+    
     robot.reset()
-    # Increase the counter automatically to speed things up
-    counter = counter + 1
     # Display the number so we know where we are
     hub.display.number(counter)
     hub.speaker.beep()
