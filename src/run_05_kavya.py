@@ -44,9 +44,14 @@ class Run_05():
        self.robot.left_motor.reset_angle(0)
        self.robot.right_motor.reset_angle(0)
        self.robot.drive_base.straight(200)
+       # lower the arm to get hold of the camera
        self.robot.attachment_motor.run_angle(80, 400)
+       # wait for a second for the arm to stop swinging
        wait(1000)
+       # move back to pull the camera and the boat back
        self.robot.drive_base.straight(-230)
+       # move forward a bit to avoid the arm tangle with the boat
        self.robot.drive_base.straight(20)
+       # swing the arm up so it's back to the home area
        self.robot.attachment_motor.run_angle(700, -430)
        self.robot.drive_base.straight(-20)
