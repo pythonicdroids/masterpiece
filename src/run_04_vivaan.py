@@ -23,21 +23,37 @@ class Run_04():
         # turn in
         self.robot.drive_base.turn(5)
         self.robot.drive_base.turn(5)
+        wait(500)
         self.robot.drive_base.turn(10)
+        # wait for 1 second for left knob to drop
         wait(1000)
-        #self.frontmotor(1800, -1500, False)
-        #self.robot.drive_base.turn(150)
+        # back out
         self.robot.drive_base.straight(-50)
         self.robot.drive_base.turn(-90)
+        # curve to skate park
         self.robot.drive_base.curve(180, 90)
-        self.robot.side_motor.run_angle(300, -83)
+        # drop izzie
+        self.robot.side_motor.run_angle(200, -80)
         self.robot.drive_base.straight(-50)
-        self.robot.drive_base.turn(-85)
-        self.robot.drive_base.straight(20)
-        self.robot.side_motor.run_angle(300, 90)
-        self.robot.drive_base.turn(30)
+        # slow down the turn to prevent over turn
+        self.robot.drive_base.settings(100, 200, 200)
+        self.robot.drive_base.turn(-68)
+        self.robot.drive_base.settings(200, 200, 200)
         self.robot.drive_base.straight(50)
-        self.robot.drive_base.curve(-500, -90)
+        # pick up sam
+        self.robot.side_motor.run_angle(200, 90)
+        self.robot.drive_base.turn(-50)
+        # push 3d statue
+        self.robot.drive_base.straight(60)
+        self.frontmotor(1800, -1100, False)
+        self.robot.drive_base.curve(-120, -80)
+        self.robot.drive_base.straight(-390)
+        self.robot.drive_base.turn(-45)
+        self.robot.drive_base.straight(200)
+        self.robot.drive_base.turn(20)
+        self.robot.drive_base.straight(-150)
+        self.frontmotor(1800, -400, True)
+
     def mission_10(self):
         self.robot.drive_base.straight(250)
         self.robot.drive_base.straight(-15)
