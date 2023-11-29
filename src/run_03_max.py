@@ -11,18 +11,22 @@ class Run_03():
         self.robot.drive_base.turn(-85)
         self.robot.drive_base.straight(10 * distance_ratio)
         self.robot.drive_base.turn(-5)
-        self.robot.drive_base.straight(105 * distance_ratio) 
+        self.robot.drive_base.straight(105 * distance_ratio)
+        # lift the bar in increments to generate more power
         self.robot.attachment_motor.run_angle(1000, 300 * distance_ratio)
         self.robot.attachment_motor.run_angle(1000, -40 * distance_ratio)
-        self.robot.attachment_motor.run_angle(250, (light_show_turn_angle - 260) * distance_ratio)
+        self.robot.attachment_motor.run_angle(250, (light_show_turn_angle - 260) \
+                                              * distance_ratio)
+        # use run_time to avoid getting stuck when lower the arms
         self.robot.attachment_motor.run_time(-1000, 500)
         self.robot.drive_base.straight(-115 * distance_ratio)
         self.robot.drive_base.turn(-45)
         self.robot.drive_base.straight(260 * distance_ratio)
+        # pick up Noah
         self.robot.side_motor.run_time(150,400)
         self.robot.drive_base.turn(-60)
         self.robot.drive_base.straight(700 * distance_ratio)
-        self.robot.side_motor.run_angle(1000,-30 * distance_ratio)
+        self.robot.side_motor.run_angle(1000, -30 * distance_ratio)
       
 
 

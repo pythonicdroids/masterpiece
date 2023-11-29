@@ -72,7 +72,6 @@ class Run_06():
                 break
 
     def run(self):
-
         self.robot.drive_base.curve(500, -90)
         # Finished mission 3
         # Going to mission 7 and deliver Audience / Expert
@@ -88,11 +87,6 @@ class Run_06():
         # Moved attachement back up so doesn't interfere
         self.robot.drive_base.turn(80)
         self.robot.drive_base.straight(500)
-
-
-
-
-
 
         # self.robot.drive_base.turn(-150)
         # self.robot.drive_base.straight(-100)

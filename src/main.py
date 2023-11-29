@@ -74,7 +74,7 @@ while True:
         elif counter == 3:
             run_03.run()
         elif counter == 4:
-            run_04.mission_ten()
+            run_04.mission_one_two_ten()
         elif counter == 5:
             run_05.mission_8_and_9()
         elif counter == 6:
