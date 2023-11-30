@@ -25,36 +25,35 @@ class Run_04():
         self.robot.drive_base.turn(5)
         wait(500)
         self.robot.drive_base.turn(10)
-        # wait for 1 second for left knob to drop
-        wait(1000)
         # back out
         self.robot.drive_base.straight(-50)
         self.robot.drive_base.turn(-90)
         # curve to skate park
         self.robot.drive_base.curve(180, 90)
         # drop Izzie and audience member
-        self.robot.side_motor.run_angle(200, -80)
+        self.robot.side_motor.run_angle(100, -80)
         self.robot.drive_base.straight(-50)
         # slow down the turn to prevent over turn
         self.robot.drive_base.settings(100, 200, 200)
-        self.robot.drive_base.turn(-68)
+        self.robot.drive_base.turn(-70)
         self.robot.drive_base.settings(200, 200, 200)
         self.robot.drive_base.straight(50)
         # pick up Sam
         self.robot.side_motor.run_angle(200, 90)
-        self.robot.drive_base.turn(-50)
+        self.robot.drive_base.straight(-90)
+        self.robot.drive_base.turn(-35)
         # push theater scene change
         self.robot.drive_base.straight(60)
         # lower front wedge
-        self.frontmotor(1800, -1100, False)
+        self.frontmotor(1800, -1050, False)
         self.robot.drive_base.curve(-120, -80)
-        self.robot.drive_base.straight(-390)
-        self.robot.drive_base.turn(-45)
-        self.robot.drive_base.straight(200)
+        self.robot.drive_base.straight(-330)
+        self.robot.drive_base.turn(-50)
+        self.robot.drive_base.straight(170)
         # nodge 3D cinema
-        self.robot.drive_base.turn(20)
-        self.robot.drive_base.straight(-150)
-        self.frontmotor(1800, -400, True)
+        self.robot.drive_base.turn(30)
+        self.robot.drive_base.straight(-180)
+        self.frontmotor(1800, -450, True)
 
     def mission_10(self):
         self.robot.drive_base.straight(250)
