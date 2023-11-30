@@ -34,7 +34,7 @@ class Run_04():
         self.robot.side_motor.run_angle(100, -80)
         self.robot.drive_base.straight(-50)
         # slow down the turn to prevent over turn
-        self.robot.drive_base.settings(100, 200, 200)
+        self.robot.drive_base.settings(turn_rate = 60)
         self.robot.drive_base.turn(-70)
         self.robot.drive_base.settings(200, 200, 200)
         self.robot.drive_base.straight(50)
