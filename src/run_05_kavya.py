@@ -1,8 +1,4 @@
-from pybricks.hubs import PrimeHub
-from pybricks.pupdevices import Motor
-from pybricks.parameters import Port
 from pybricks.tools import wait
-from robot import Robot
 
 class Run_05():
     def __init__(self, robot):
@@ -45,13 +41,13 @@ class Run_05():
        self.robot.right_motor.reset_angle(0)
        self.robot.drive_base.straight(200)
        # lower the arm to get hold of the camera
-       self.robot.attachment_motor.run_angle(80, 400)
-       # wait for a second for the arm to stop swinging
-       wait(1000)
+       self.robot.attachment_motor.run_angle(80, 200)
+       # wait for half a second for the arm to stop swinging
+       wait(500)
        # move back to pull the camera and the boat back
        self.robot.drive_base.straight(-230)
        # move forward a bit to avoid the arm tangle with the boat
        self.robot.drive_base.straight(20)
        # swing the arm up so it's back to the home area
-       self.robot.attachment_motor.run_angle(700, -430)
-       self.robot.drive_base.straight(-20)
+       self.robot.attachment_motor.run_angle(700, -200)
+       self.robot.drive_base.straight(-400)

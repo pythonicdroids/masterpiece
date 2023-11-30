@@ -1,5 +1,5 @@
 from pybricks.hubs import PrimeHub
-from pybricks.parameters import Button, Side, Port, Direction, Icon
+from pybricks.parameters import Button, Side, Port, Icon
 from pybricks.tools import wait, StopWatch
 from robot import Robot
 from run_01_aron import Run_01
@@ -65,24 +65,25 @@ while True:
         if counter == 1 and not stop_watch_reseted:
             stop_watch.reset()
             stop_watch_reseted = True
-        start_time = stop_watch.time()/1000
-        print("Mission ", counter, " starting,  elapsed: \t", start_time)
-        if counter == 1:
-            run_01.run()
-        elif counter == 2:
-            run_02.run2()
-        elif counter == 3:
-            run_03.run()
-        elif counter == 4:
-            run_04.mission_one_two_ten()
-        elif counter == 5:
-            run_05.mission_8_and_9()
-        elif counter == 6:
-            run_06.run()
-        end_time = stop_watch.time()/1000
-        print("Mission ", counter, " completed, elapsed: \t", end_time, ", took: ", end_time - start_time)
-        # Increase the counter automatically to speed things up
-        # counter = counter + 1
+        else:
+            start_time = stop_watch.time()/1000
+            print("Mission ", counter, " starting,  elapsed: \t", start_time)
+            if counter == 1:
+                run_01.run()
+            elif counter == 2:
+                run_02.run2()
+            elif counter == 3:
+                run_03.run()
+            elif counter == 4:
+                run_04.mission_one_two_ten()
+            elif counter == 5:
+                run_05.mission_8_and_9()
+            elif counter == 6:
+                run_06.run()
+            end_time = stop_watch.time()/1000
+            print("Mission ", counter, " completed, elapsed: \t", end_time, ", took: ", end_time - start_time)
+            # Increase the counter automatically to speed things up
+            counter = counter + 1
     
     robot.reset()
     # Display the number so we know where we are

@@ -14,8 +14,8 @@ class Robot:
         self.side_motor = Motor(side_motor_port)
         self.drive_base = DriveBase(self.left_motor, self.right_motor, wheel_diameter, axle_track)
         self.drive_base.settings(200,200,200)
-        self.left_color_sensor = ColorSensor(left_color_sensor_port)
-        self.right_color_sensor = ColorSensor(right_color_sensor_port)
+        # self.left_color_sensor = ColorSensor(left_color_sensor_port)
+        # self.right_color_sensor = ColorSensor(right_color_sensor_port)
 
     def forward(self, speed, distance_cm):
         circ_cm = 27.6
