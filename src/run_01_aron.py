@@ -6,7 +6,8 @@ class Run_01():
         self.robot = robot
 
     def run(self):
-        self.robot.drive_base.settings(straight_speed = 200)
+        # (straight_speed, straight_acceleration, turn_rate, turn_acceleration)
+        self.robot.drive_base.settings(straight_speed = 250)
         self.robot.drive_base.curve(500, -92)
         self.robot.drive_base_settings = self.robot.drive_base.settings()
         self.robot.drive_base.settings(turn_rate = 60)
@@ -24,7 +25,7 @@ class Run_01():
         self.robot.drive_base.turn(90)
         # push hologram performer
         self.robot.drive_base.straight(-70)
-        self.robot.drive_base.settings(straight_speed = 900)
+        self.robot.drive_base.settings(straight_speed = 900, straight_acceleration = [500, 500])
         # curve back to home
         self.robot.drive_base.curve(860, -30)
 
