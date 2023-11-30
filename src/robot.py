@@ -61,3 +61,4 @@ class Robot:
         self.drive_base.reset()
         self.attachment_motor.reset_angle()
         self.side_motor.reset_angle()
+        self.drive_base.settings(200,200,200)
