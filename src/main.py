@@ -75,10 +75,12 @@ while True:
             elif counter == 3:
                 run_04.mission_one_two_ten()
             elif counter == 4:
-                run_05.mission_8_and_9()
+                run_04.deliver_emily()
             elif counter == 5:
-                run_03.run()
+                run_05.mission_8_and_9()
             elif counter == 6:
+                run_03.run()
+            elif counter == 7:
                 run_06.run()
             end_time = stop_watch.time()/1000
             print("Mission ", counter, " completed, elapsed: \t", end_time, ", took: ", end_time - start_time)

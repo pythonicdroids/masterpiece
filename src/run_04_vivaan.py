@@ -55,17 +55,7 @@ class Run_04():
         self.robot.drive_base.straight(-180)
         self.frontmotor(1800, -450, True)
 
-    def mission_10(self):
-        self.robot.drive_base.straight(250)
-        self.robot.drive_base.straight(-15)
-        self.robot.attachment_motor.run_angle(3000, -340)
-        self.robot.drive_base.turn(5)
-        wait(500)
-        self.robot.drive_base.straight(-37)
-        self.robot.attachment_motor.run_angle(30000, 340)
-
-
-        #turn like 90
-        #forward
-        #turn
-        #backwards
+    def deliver_emily(self):
+        distance = 240
+        self.robot.drive_base.straight(distance)
+        self.robot.drive_base.straight(-distance)
