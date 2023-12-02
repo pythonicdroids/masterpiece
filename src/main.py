@@ -81,7 +81,7 @@ while True:
             elif counter == 6:
                 run_03.run()
             elif counter == 7:
-                run_06.run()
+                run_03.run()
             end_time = stop_watch.time()/1000
             print("Mission ", counter, " completed, elapsed: \t", end_time, ", took: ", end_time - start_time)
             # Increase the counter automatically to speed things up
