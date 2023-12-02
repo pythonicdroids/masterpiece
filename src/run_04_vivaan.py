@@ -57,5 +57,6 @@ class Run_04():
 
     def deliver_emily(self):
         distance = 240
+        self.robot.drive_base.settings(straight_speed = 900, straight_acceleration = [500, 500])
         self.robot.drive_base.straight(distance)
-        self.robot.drive_base.straight(-distance)
+        self.robot.drive_base.straight(-distance + 30)
