@@ -81,12 +81,12 @@ class Run_06():
         self.robot.drive_base.turn(-39)
         self.robot.drive_base.straight(75)
         # Getting ready to drop Audience / Expert
-        self.robot.side_motor.run_angle(100, -80)
-        self.robot.drive_base.straight(-70)
-        self.robot.side_motor.run_angle(200, 80)
-        # Moved attachement back up so doesn't interfere
-        self.robot.drive_base.turn(80)
-        self.robot.drive_base.straight(500)
+        self.robot.side_motor.run_angle(100, -90)
+        # self.robot.drive_base.straight(-70)
+        # self.robot.side_motor.run_angle(200, 80)
+        # # Moved attachement back up so doesn't interfere
+        # self.robot.drive_base.turn(80)
+        # self.robot.drive_base.straight(500)
 
         # self.robot.drive_base.turn(-150)
         # self.robot.drive_base.straight(-100)
