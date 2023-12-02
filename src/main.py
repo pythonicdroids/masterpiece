@@ -73,11 +73,11 @@ while True:
             elif counter == 2:
                 run_02.run2()
             elif counter == 3:
-                run_03.run()
-            elif counter == 4:
                 run_04.mission_one_two_ten()
-            elif counter == 5:
+            elif counter == 4:
                 run_05.mission_8_and_9()
+            elif counter == 5:
+                run_03.run()
             elif counter == 6:
                 run_06.run()
             end_time = stop_watch.time()/1000
